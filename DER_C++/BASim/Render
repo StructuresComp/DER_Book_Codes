@@ -1,0 +1,30 @@
+#ifndef BASIM_RENDER
+#define BASIM_RENDER
+
+#include "src/Render/OpenGLHeaders.hh"
+#include "src/Render/OpenGLDecl.hh"
+
+#include "Core"
+#include "Math"
+#include "Physics"
+
+#include "src/Render/Color.hh"
+#include "src/Render/Camera.hh"
+#include "src/Render/Translator.hh"
+#include "src/Render/Zoomer.hh"
+#include "src/Render/TrackBall.hh"
+#include "src/Render/ViewController.hh"
+#include "src/Render/RenderUtils.hh"
+#include "src/Render/RenderBase.hh"
+#include "src/Render/RodRenderer.hh"
+#include "src/Render/Scene.hh"
+
+#ifdef HAVE_PNG
+#include "src/Render/YImage/YImage.hh"
+#endif // HAVE_PNG
+
+#endif // BASIM_RENDER
+
+// Local Variables:
+// mode: c++
+// End:

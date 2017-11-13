@@ -1,0 +1,36 @@
+# Khalid Jawed
+# khalidjm@seas.ucla.edu
+
+dt 0.01 # time-step size
+frequency-start 10.0 # Frequency of vibration
+frequency-end -1 # negative if the same as frequency-start
+t-step 1000.0 # time over which the frequency varies from start to end
+amplitude 1.0e-3 # amplitude for vibration. See ch8_vibratingCable.cc
+end-time 121.0 # Simulation exits at this time
+
+save-data true # save data?
+length 0.1              # length of rod in meter
+major-radius 0.001   # radius of major axis of cross-section in meter
+minor-radius 0.001   # radius of minor axis of cross-section in meter
+nv 100 # number of vertices
+
+medium-viscosity 0e-0 #  Viscosity of medium in Pa-s
+viscosity 0.0 # Dynamic viscosity for the rod
+
+youngs-modulus 1.0e+6   # Young's modulus for the rod in Pa
+shear-modulus 0.333e+6 # Shear modulus for the rod
+
+gravity 0.0 -9.8 0.0    # gravity
+density 1000  # Volumetric density of the rod in kg/m3
+
+fps 25   # When recording movie, what is the frames per second
+
+atol 1e-08		# absolute convergence tolerance
+inftol 1e-20		# infinity norm convergence tolerance
+integrator implicit	# type of integrator to use for the rod
+iterations 100 # maximum number of iterations for implicit method
+quasistatic false        # update material frame quasistatically
+radius-scale 1          # scaling for rendering and collisions
+rtol 1e-08              # relative convergence tolerance
+stol 1e-08              # convergence tolerance in terms of the norm of the change in the solution between steps
+velocity-solve false     # solve for velocity increments in implicit Euler (if false, the solve is for position increments)

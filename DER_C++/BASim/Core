@@ -1,0 +1,27 @@
+#ifndef BASIM_CORE
+#define BASIM_CORE
+
+#include "src/Core/EigenIncludes.hh"
+#include "src/Core/STLIncludes.hh"
+
+//#include <flens/flens.h>
+
+#include "src/Core/Timer.hh"
+#include "src/Core/Definitions.hh"
+#include "src/Core/Macros.hh"
+#include "src/Core/Util.hh"
+#include "src/Core/Handle.hh"
+#include "src/Core/Property.hh"
+#include "src/Core/ObjectHandles.hh"
+#include "src/Core/ObjectBase.hh"
+#include "src/Core/ObjectControllerBase.hh"
+#include "src/Core/TopologicalObject/Topology.hh"
+#include "src/Core/TopologicalObject/TopObjHandles.hh"
+#include "src/Core/TopologicalObject/TopObjIterators.hh"
+#include "src/Core/TopologicalObject/TopologicalObject.hh"
+
+#endif // BASIM_CORE
+
+// Local Variables:
+// mode: c++
+// End:

@@ -1,0 +1,29 @@
+# Khalid Jawed
+# khalidjm@seas.ucla.edu
+
+dt 0.01 # time-step size
+end-time 20.0 # exit at this time
+length 1.0 # length of rod in meter
+major-radius 0.001 # radius of major axis of cross-section in meter
+minor-radius 0.001 # radius of minor axis of cross-section in meter
+nv 30 # number of vertices
+natural-radius 0.05 # helix parameter
+alpha 0.1 # helix parameter
+viscosity 0.0 # Dynamic viscosity for the rod
+youngs-modulus 1.0e+6 # Young's modulus for the rod in Pa
+shear-modulus 0.33e+6 # Shear modulus for the rod
+gravity 0.0 0.0 -9.81 # gravity
+density 1000.0 # volumetric density in kg/m3
+save-data true # save data?
+
+fps 25 # When recording movie, what is the frames per second
+
+atol 1e-08 # absolute convergence tolerance
+inftol 1e-20 # infinity norm convergence tolerance
+integrator implicit # type of integrator to use for the rod
+iterations 100 # maximum number of iterations for implicit method
+quasistatic false # update material frame quasistatically
+radius-scale 1 # scaling for rendering and collisions
+rtol 1e-08 # relative convergence tolerance
+stol 1e-08 # convergence tolerance in terms of the norm of the change in the solution between steps
+velocity-solve false # solve for velocity increments in implicit Euler (if false, the solve is for position increments)

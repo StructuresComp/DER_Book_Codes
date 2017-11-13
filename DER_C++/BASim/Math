@@ -1,0 +1,41 @@
+#ifndef BASIM_MATH
+#define BASIM_MATH
+
+#include "Core"
+
+#include "src/Math/Math.hh"
+#include "src/Math/MatrixBase.hh"
+#include "src/Math/Preconditioner.hh"
+#include "src/Math/LinearSolverBase.hh"
+
+#include "src/Math/BandMatrix.hh"
+#include "src/Math/DiagonalPreconditioner.hh"
+#include "src/Math/ConjugateGradient.hh"
+
+#ifdef HAVE_PETSC
+#include "src/Math/Petsc/PetscUtils.hh"
+#include "src/Math/Petsc/PetscMatrix.hh"
+#include "src/Math/Petsc/PetscLinearSolver.hh"
+#endif // HAVE_PETSC
+
+#ifdef HAVE_LAPACK
+#include "src/Math/MKL/MKLLinearSolver.hh"
+#endif // HAVE_LAPACK
+
+//#include "src/Math/FlensMatrix.hh"
+
+//#include <itpp/itbase.h>
+//#include "src/Math/ITPPMatrix.hh"
+
+#include "src/Math/SolverUtils.hh"
+
+#include "src/Math/TimeSteppingBase.hh"
+#include "src/Math/SymplecticEuler.hh"
+#include "src/Math/ImplicitEuler.hh"
+#include "src/Math/StaticsSolver.hh"
+
+#endif // BASIM_MATH
+
+// Local Variables:
+// mode: c++
+// End:

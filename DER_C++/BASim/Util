@@ -1,0 +1,13 @@
+#ifndef BASIM_UTIL
+#define BASIM_UTIL
+
+#include "Core"
+
+#include "src/Util/StringToolbox.hh"
+#include "src/Util/KeyedValue.hh"
+
+#endif // BASIM_UTIL
+
+// Local Variables:
+// mode: c++
+// End:

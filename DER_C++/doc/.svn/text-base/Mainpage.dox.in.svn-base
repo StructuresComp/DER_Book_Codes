@@ -1,0 +1,41 @@
+/** \mainpage BASim documentation
+
+    \section ObjectBase
+    - base class for all simulate-able objects in the scene
+    - has a property container, which can hold arbitrary properties (see below)
+    - new properties can be added to the object via a member function call
+    - properties accessed via ObjPropHandle (object property handles)
+
+    \section ObjectController
+    - base class for any type of controller for objects (time-stepper, statics solver, etc.)
+    - virtual function (execute) that performs whatever its job is
+
+    \section PhysObject
+    - derived from ObjectBase
+    - adds the object property of total number of degrees of freedom
+    - adds the object property of number of vertices
+    - adds the object property of number of edges
+    - adds the object property of the (Scalar) mass associated to each degree of freedom
+    - adds virtual functions for computing the internal forces and computing the Jacobian of internal forces
+    - adds two property containers: vertex properties and edge properties
+
+    \section ElasticRod
+    - derived from PhysObject
+    - adds standard vertex/edge properties associated to the elastic rods model (density, elastic moduli, viscosity, vertex positions, reference frames, material frames, thetas, etc.)
+    - utility functions for fixing vertices, edges
+
+    \section Property
+    - essentially just a container for any kind of data associated to something (an object, edge, vertex, etc.)
+    - templated, so property type can be anything
+
+    \section ToDo To Do
+    - viscous rods
+    - fast projection
+    - inextensibility
+    - quasistatic material frame
+    - sparse matrix / linear solver
+    - speed up bending force (replace with derivative of kb instead of kb.dot(u))
+    - setting options for rod, integrator
+    - resize method for matrix class
+
+*/
